@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+*:root {
+	--section-height: 50rem;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.topmovie-container {
+	color: white;
+	object-fit: contain;
+	height: var(--section-height);
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+
+.topmovie-content {
+	padding-top: 20rem;
+	padding-left: 3.5rem;
+}
+
+.topmovie-title {
+	font-weight: 900;
+	font-size: 5rem;
+	position: relative;
+	line-height: 4.5rem;
+	margin-bottom: 1rem;
+}
+
+.control-buttons {
+	margin-bottom: 1rem;
+}
+
+.control-button {
+	background-color: rgba(51, 51, 51, 0.5);
+	border: none;
+	padding: 0.25rem 2rem 0.25rem 2rem;
+	font-weight: 600;
+	color: rgb(249, 249, 249);
+	font-size: 1.15rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.control-button:nth-child(2) {
+	margin-left: 1.5rem;
+}
+
+.movie-description {
+	font-size: 1rem;
+	max-width: 30%;
+	line-height: 1.5rem;
+	position: relative;
+	top: 1rem;
+}
+
+.control-button:hover {
+	color: rgb(51, 51, 51);
+	background-color: #e6e6e6;
+	transition: all 0.2s;
+}
+
+.topmovie-content::after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	background-image: linear-gradient(
+		180deg,
+		transparent,
+		rgba(37, 37, 37, 0.61),
+		#111
+	);
+	width: 100%;
+	height: 4em;
+}
+
+@media screen and (max-width: 567px) {
+	.topmovie-content {
+		padding-top: 10rem;
+	}
+}
