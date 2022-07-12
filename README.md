@@ -1,7 +1,6 @@
 ## This is a smaller project mostly because I wanted to try out Vite, which is a webpack, similar to create-react-app. 
 ## Anyhoo here is the link to the live demo: https://netflix-clone-21d9e.web.app
-## (Clicking the image shows the trailer of the movie, some may not work because some of the names returned by the api 
-## are in a completely differently language. I may update that at some point to make it work)
+## (Clicking the image shows the trailer of the movie, some may not work because some of the names returned by the api are in a completely differently language. I may update that at some point to make it work)
 ## Below are a few images of the app itself
 
 ![Screenshot_20220712_234410](https://user-images.githubusercontent.com/79002760/178566951-fff1bcc3-f0da-400c-b510-74278a3864e5.png)
